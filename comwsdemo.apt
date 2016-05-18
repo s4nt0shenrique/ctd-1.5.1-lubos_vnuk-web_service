@@ -108,8 +108,10 @@ Application Description: COM Web Services Interface demonstration
 		Enable Runtime Checks Of External References? Yes
 		Use Release 4.0 Scope Rules? No
 	Libraries
-		File Include: vtstr.apl
+		! Local
 		File Include: comws.apt
+		! Centura
+		File Include: vtstr.apl
 	Global Declarations
 		Window Defaults
 			Tool Bar

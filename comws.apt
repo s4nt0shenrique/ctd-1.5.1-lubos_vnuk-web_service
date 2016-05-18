@@ -73,6 +73,7 @@ Application Description: COM Web Services Interface library
 		Enable Runtime Checks Of External References? Yes
 		Use Release 4.0 Scope Rules? No
 	Libraries
+		! Local
 		File Include: comwstl.apt
 	Global Declarations
 		Window Defaults
