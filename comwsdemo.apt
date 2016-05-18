@@ -1,0 +1,1209 @@
+Application Description: COM Web Services Interface demonstration
+		Module:	comwsdemo.apt
+		Created:	2003-10-06
+		Author:	Lubos Vnuk (VNL)
+		Revision:	01 - 20031127 - VNL
+		DevTool:	SQLWindows/32 1.5.1 PTF6
+		
+		(c) Lubos Vnuk, 2003, http://sqlweb.vnuk.org/gup
+		This application may be used freely as long as the copyright notice stays intact. It is provided "as is"
+		without warranty of any kind, express or implied, including but not limited to the warranties of merchantability,
+		fitness for a particular purpose and noninfringement. In no event shall Lubos Vnuk be liable for any claim,
+		damages or other liability in connection with the application or the use or other dealings in the application.
+.data CLASSPROPSSIZE
+0000: 2700
+.enddata
+.data CLASSPROPS
+0000: 4442475F504C4159 4241434B5F475549 44001000F5FCE2AF 54B63145A8031204
+0020: AA73DF50000000
+.enddata
+	Outline Version - 4.0.27
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400080000
+0020: 0000000000830100 002C000000020000 0003000000FFFFFF FFFFFFFFFFF8FFFF
+0040: FFE2FFFFFFFFFFFF FF000000000B0400 00E0020000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 00000000005B433A 5C646573656E766F 6C76696D656E746F 5C6769746875622E
+0020: 636F6D5C73346E74 307368656E726971 75655C6374642D31 2E352E312D6C7562
+0040: 6F735F766E756B2D 7765625F73657276 6963655C636F6D77 7364656D6F2E6578
+0060: 655B433A5C646573 656E766F6C76696D 656E746F5C676974 6875622E636F6D5C
+0080: 73346E7430736865 6E72697175655C63 74642D312E352E31 2D6C75626F735F76
+00A0: 6E756B2D7765625F 736572766963655C 636F6D777364656D 6F2E646C6C5B433A
+00C0: 5C646573656E766F 6C76696D656E746F 5C6769746875622E 636F6D5C73346E74
+00E0: 307368656E726971 75655C6374642D31 2E352E312D6C7562 6F735F766E756B2D
+0100: 7765625F73657276 6963655C636F6D77 7364656D6F2E6170 6300000101015B43
+0120: 3A5C646573656E76 6F6C76696D656E74 6F5C676974687562 2E636F6D5C73346E
+0140: 74307368656E7269 7175655C6374642D 312E352E312D6C75 626F735F766E756B
+0160: 2D7765625F736572 766963655C636F6D 777364656D6F2E72 756E5B433A5C6465
+0180: 73656E766F6C7669 6D656E746F5C6769 746875622E636F6D 5C73346E74307368
+01A0: 656E72697175655C 6374642D312E352E 312D6C75626F735F 766E756B2D776562
+01C0: 5F73657276696365 5C636F6D77736465 6D6F2E646C6C5B43 3A5C646573656E76
+01E0: 6F6C76696D656E74 6F5C676974687562 2E636F6D5C73346E 74307368656E7269
+0200: 7175655C6374642D 312E352E312D6C75 626F735F766E756B 2D7765625F736572
+0220: 766963655C636F6D 777364656D6F2E61 706300000101015B 433A5C646573656E
+0240: 766F6C76696D656E 746F5C6769746875 622E636F6D5C7334 6E74307368656E72
+0260: 697175655C637464 2D312E352E312D6C 75626F735F766E75 6B2D7765625F7365
+0280: 72766963655C636F 6D777364656D6F2E 6170645B433A5C64 6573656E766F6C76
+02A0: 696D656E746F5C67 69746875622E636F 6D5C73346E743073 68656E7269717565
+02C0: 5C6374642D312E35 2E312D6C75626F73 5F766E756B2D7765 625F736572766963
+02E0: 655C636F6D777364 656D6F2E646C6C5B 433A5C646573656E 766F6C76696D656E
+0300: 746F5C6769746875 622E636F6D5C7334 6E74307368656E72 697175655C637464
+0320: 2D312E352E312D6C 75626F735F766E75 6B2D7765625F7365 72766963655C636F
+0340: 6D777364656D6F2E 6170630000010101 5B433A5C64657365 6E766F6C76696D65
+0360: 6E746F5C67697468 75622E636F6D5C73 346E74307368656E 72697175655C6374
+0380: 642D312E352E312D 6C75626F735F766E 756B2D7765625F73 6572766963655C63
+03A0: 6F6D777364656D6F 2E61706C5B433A5C 646573656E766F6C 76696D656E746F5C
+03C0: 6769746875622E63 6F6D5C73346E7430 7368656E72697175 655C6374642D312E
+03E0: 352E312D6C75626F 735F766E756B2D77 65625F7365727669 63655C636F6D7773
+0400: 64656D6F2E646C6C 5B433A5C64657365 6E766F6C76696D65 6E746F5C67697468
+0420: 75622E636F6D5C73 346E74307368656E 72697175655C6374 642D312E352E312D
+0440: 6C75626F735F766E 756B2D7765625F73 6572766963655C63 6F6D777364656D6F
+0460: 2E61706300000101 01
+.enddata
+		Outline Window State: Normal
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+			Left: -0.013"
+			Top:    0.0"
+			Width:  8.013"
+			Height: 4.969"
+		Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left: 4.15"
+			Top:    1.885"
+			Width:  3.8"
+			Height: 2.073"
+		Class Editor Location
+			Visible? No
+			Left: 0.575"
+			Top:    0.094"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left: 6.388"
+			Top:    0.729"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? Yes
+		Use Release 4.0 Scope Rules? No
+	Libraries
+		File Include: vtstr.apl
+		File Include: comws.apt
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: 3D Face Color
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0'%'
+			Number: #0
+			Number: ###000
+			Number: ###000;'($'###000')'
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+		Resources
+		Variables
+			String: zz_s
+		Internal Functions
+		Named Menus
+		Class Definitions
+			Functional Class: comNVS
+				Description:
+				Derived From
+					Class: comClWS
+				Class Variables
+				Instance Variables
+					: I_oNVSBody
+						Class: MSXML_IXMLDOMElement
+				Functions
+					Function: ExecuteOp
+						Description: Executes the formerly prepared SOAP call operation.
+								Parameters:
+									p_sSoapAction	SoapAction parameter for the HTTP header
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+								
+								Note: After the successful execution, the response element of the SOAP Response
+								will become the current element. Subsequently you can call GetXXXXVal() and
+								SelectXXXX() methods to access the operation's return values.
+						Returns
+							Boolean:
+						Parameters
+							String: p_sSoapAction
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+						Actions
+							Set l_bOk=comClWS.ExecuteOp(p_sSoapAction)
+							!
+							Set l_bOk=l_bOk and SelectParentNode()
+							Set l_bOk=l_bOk and GetNode( I_oNVSBody )
+							Set l_bOk=l_bOk and SelectResponse()
+							!
+							Return l_bOk
+					Function: PrintThree
+						Description:
+						Returns
+						Parameters
+							Receive String: pList
+						Static Variables
+						Local variables
+							: oNode
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Call SelectResponse()
+							Call GetNode( oNode )
+							Call __PrintThree( oNode, pList, STRING_Null, STRING_Null)
+					Function: __PrintThree
+						Description:
+						Returns
+						Parameters
+							: pNode
+								Class: MSXML_IXMLDOMElement
+							Receive String: pList
+							String: pDesl
+							String: pRef
+						Static Variables
+						Local variables
+							: oNodeList
+								Class: MSXML_IXMLDOMNodeList
+							: oNode
+								Class: MSXML_IXMLDOMElement
+							String: s_Title
+							String: s_Ref
+							: vValue
+								Class: Variant
+							String: s_Value
+							Number: nTot
+							Number: nCont
+							String: s_Type
+						Actions
+							! Busca o nome
+							Call pNode.PropGetnodeName( s_Title )
+							If s_Title = STRING_Null
+								Return FALSE
+							! Busca o ID
+							If pRef != STRING_Null
+								Call pNode.getAttribute('id',vValue)
+								Call vValue.GetString( s_Value )
+								If s_Value != pRef
+									Return FALSE
+							! Busca o Tipo do Nó
+							Call pNode.PropGetnodeTypeString( s_Type )
+							If s_Type != 'element'
+								! Busca o Valor
+								Call pNode.PropGetnodeValue( vValue )
+								Call vValue.GetString( s_Value )
+								Set pList = pList || '
+										' || pDesl || s_Title || ' - [Valor: ' || s_Value || ']'
+							If s_Type = 'element'
+								Set pList = pList || '
+										' || pDesl || s_Title
+								! Busca o HREF
+								Call pNode.getAttribute('href',vValue)
+								Call vValue.GetString( s_Ref )
+							! Busca filho por Ref
+							If s_Ref != STRING_Null
+								Set s_Ref = SalStrRightX( s_Ref, SalStrLength( s_Ref ) - 1 )
+								If FindNodeRef( s_Ref, oNode )
+									Call __PrintThree( oNode, pList, pDesl || '  ', STRING_Null )
+							! Busca filhos normal
+							Else
+								If pNode.PropGetchildNodes( oNodeList )
+									If oNodeList.PropGetlength( nTot )
+										Set nCont = 0
+										While nCont < nTot
+											If oNodeList.PropGetitem( nCont, oNode )
+												Call __PrintThree( oNode, pList, pDesl || '  ', STRING_Null )
+												Set nCont = nCont + 1
+					Function: FindNodeRef
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: pRef
+							: pNode
+								Class: MSXML_IXMLDOMElement
+						Static Variables
+						Local variables
+							: oElement
+								Class: MSXML_IXMLDOMElement
+						Actions
+							If oElement.Attach( I_oNVSBody )
+								If __FindNodeRef( pRef, oElement )
+									If pNode.Attach( oElement )
+										Return TRUE
+							Return FALSE
+					Function: __FindNodeRef
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: pRef
+							: pNode
+								Class: MSXML_IXMLDOMElement
+						Static Variables
+						Local variables
+							: vValue
+								Class: Variant
+							String: sValue
+							: oNodeList
+								Class: MSXML_IXMLDOMNodeList
+							: oNode
+								Class: MSXML_IXMLDOMElement
+							Number: nTot
+							Number: nCont
+							String: sTitle
+						Actions
+							Call pNode.PropGetnodeName( sTitle )
+							If sTitle = STRING_Null
+								Return FALSE
+							Call pNode.getAttribute('id',vValue)
+							Call vValue.GetString( sValue )
+							If sValue=pRef
+								Return TRUE
+							Else
+								If pNode.PropGetchildNodes( oNodeList )
+									If oNodeList.PropGetlength( nTot )
+										Set nCont = 0
+										While nCont < nTot
+											If oNodeList.PropGetitem( nCont, oNode )
+												If __FindNodeRef( pRef, oNode )
+													Call pNode.Attach( oNode )
+													Return TRUE
+												Set nCont = nCont + 1
+							Return FALSE
+		Default Classes
+			MDI Window: cBaseMDI
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			Check Box:
+			Child Table:
+			Quest Child Window: cQuickDatabase
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+			ActiveX:
+		Application Actions
+	Form Window: frmWSdemo
+		Class:
+		Property Template:
+		Class DLL Name:
+		Title: COM Web Services Interface Demo by Lubos Vnuk
+		Icon File:
+		Accesories Enabled? No
+		Visible? Yes
+		Display Settings
+			Display Style? Default
+			Visible at Design time? Yes
+			Automatically Created at Runtime? Yes
+			Initial State: Normal
+			Maximizable? Yes
+			Minimizable? Yes
+			System Menu? Yes
+			Resizable? Yes
+			Window Location and Size
+				Left: 3.913"
+				Top:    0.76"
+				Width:  10.233"
+				Width Editable? Yes
+				Height: 4.488"
+				Height Editable? Yes
+			Form Size
+				Width:  Default
+				Height: Default
+				Number of Pages: Dynamic
+			Font Name: Default
+			Font Size: Default
+			Font Enhancement: Default
+			Text Color: Default
+			Background Color: Default
+		Description:
+		Named Menus
+		Menu
+		Tool Bar
+			Display Settings
+				Display Style? Default
+				Location? Top
+				Visible? Yes
+				Size: Default
+				Size Editable? Yes
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Contents
+		Contents
+			!
+			Background Text: MS.NET Web Service [DOC/literal]  (http://www.webservicex.net/uklocation.asmx?WSDL):
+				Resource Id: 49667
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 0.167"
+					Top:    0.179"
+					Width:  9.4"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Blue
+				Background Color: Default
+			Background Text: UK County:
+				Resource Id: 49673
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 0.033"
+					Top:    0.464"
+					Width:  1.033"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Data Field: dfCounty
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 1.15"
+						Top:    0.429"
+						Width:  1.767"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						Set MyValue='Avon'
+			Pushbutton: pbGetUKLocationByCounty
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: GetUKLocationByCounty
+				Window Location and Size
+					Left: 3.033"
+					Top:    0.417"
+					Width:  2.45"
+					Width Editable? Yes
+					Height: 0.298"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalWaitCursor(TRUE)
+						Call SalTblReset(tblTowns)
+						Set bOk=TRUE
+						Set bOk=bOk AND comWS.Init('http://www.webservicex.net/uklocation.asmx', '')
+						If bOk
+							Set bOk=bOk AND comWS.PrepareOp('GetUKLocationByCounty', 'http://www.webserviceX.NET')
+							Set bOk=bOk AND comWS.AddStringPar('County', dfCounty)
+							Set bOk=bOk AND comWS.ExecuteOp('http://www.webserviceX.NET/GetUKLocationByCounty')
+							Set bOk=bOk AND comWS.GetStringVal('GetUKLocationByCountyResult', s)
+							Set mlLocation=VisStrSubstitute(s, SalNumberToChar (10), '
+									')
+							Set bOk=bOk AND  ParseLocation()
+							Call comWS.Done()
+						If NOT bOk
+							Call SalMessageBox ( SalNumberToStrX(comWS.GetError(FALSE), 0) || ' - ' || comWS.GetErrorText(), 'Error', MB_Ok)
+							Call comWS.GetError(TRUE)
+						Call SalWaitCursor(FALSE)
+			Background Text: >>
+				Resource Id: 17111
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 5.55"
+					Top:    0.476"
+					Width:  0.183"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Multiline Field: mlLocation
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: 64000
+					String Type: String
+					Editable? Yes
+				Display Settings
+					Border? Yes
+					Word Wrap? No
+					Vertical Scroll? Yes
+					Window Location and Size
+						Left: 5.767"
+						Top:    0.405"
+						Width:  3.9"
+						Width Editable? Yes
+						Height: 2.012"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+				Message Actions
+			Child Table: tblTowns
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Display Settings
+					Window Location and Size
+						Left: 0.267"
+						Top:    0.786"
+						Width:  5.267"
+						Width Editable? Yes
+						Height: 1.619"
+						Height Editable? Yes
+					Visible? Yes
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					View: Table
+					Allow Row Sizing? No
+					Lines Per Row: Default
+				Memory Settings
+					Maximum Rows in Memory: Default
+					Discardable? Yes
+				Contents
+					Column: colPostCode
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: PostCode
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  1.133"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+					Column: colTown
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: Town
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  1.767"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+					Column: colCounty
+						Class Child Ref Key: 0
+						Class ChildKey: 0
+						Class:
+						Property Template:
+						Class DLL Name:
+						Title: County
+						Visible? Yes
+						Editable? Yes
+						Maximum Data Length: Default
+						Data Type: String
+						Justify: Left
+						Width:  1.733"
+						Width Editable? Yes
+						Format: Unformatted
+						Country: Default
+						Input Mask: Unformatted
+						Cell Options
+							Cell Type? Standard
+							Multiline Cell? No
+							Cell DropDownList
+								Sorted? Yes
+								Vertical Scroll? Yes
+								Auto Drop Down? No
+								Allow Text Editing? Yes
+							Cell CheckBox
+								Check Value:
+								Uncheck Value:
+								Ignore Case? Yes
+						List Values
+						Message Actions
+				Functions
+				Window Variables
+				Message Actions
+			Background Text: <<
+				Resource Id: 17109
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 5.55"
+					Top:    0.857"
+					Width:  0.183"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Background Text: AXIS Web Service [RPC/encoded]  (http://webservices.imacination.com/distance/Distance.jws?wsdl):
+				Resource Id: 21326
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 0.133"
+					Top:    2.571"
+					Width:  9.433"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Blue
+				Background Color: Default
+			Background Text: US ZIP:
+				Resource Id: 49670
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 0.217"
+					Top:    2.857"
+					Width:  0.85"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Data Field: dfZip
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 1.15"
+						Top:    2.821"
+						Width:  1.767"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						Set MyValue='10007'
+			Pushbutton: pbGetCity
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: GetUSCityByZip
+				Window Location and Size
+					Left: 3.033"
+					Top:    2.798"
+					Width:  2.0"
+					Width Editable? Yes
+					Height: 0.298"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalWaitCursor(TRUE)
+						Set bOk=TRUE
+						!
+						Set bOk=bOk AND comWS.Init('http://webservices.imacination.com/distance/Distance.jws', '')
+						! Set bOk=bOk AND comWS.Reconfigure('SoapXMLEncName', 'UTF-16')
+						If bOk
+							Set bOk=bOk AND comWS.PrepareOp('getCity', 'http://DefaultNamespace')
+							Set bOk=bOk AND comWS.AddStringPar('Zip', dfZip)
+							Set bOk=bOk AND comWS.ExecuteOp('')
+							Set bOk=bOk AND comWS.GetStringVal('getCityReturn', dfCity)
+							Call comWS.Done()
+						If NOT bOk
+							Call SalMessageBox ( SalNumberToStrX(comWS.GetError(FALSE), 0) || ' - ' || comWS.GetErrorText(), 'Error', MB_Ok)
+							Call comWS.GetError(TRUE)
+						!
+						!
+						Call SalWaitCursor(FALSE)
+			Background Text: >>
+				Resource Id: 17110
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 5.1"
+					Top:    2.857"
+					Width:  0.183"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Data Field: dfCity
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 5.3"
+						Top:    2.821"
+						Width:  4.367"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+			Background Text: Apache SOAP Web Service  [RPC/encoded]  (http://www.xmethods.net/sd/2001/TemperatureService.wsdl):
+				Resource Id: 27534
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 0.117"
+					Top:    3.19"
+					Width:  9.433"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Blue
+				Background Color: Default
+			Background Text: US ZIP:
+				Resource Id: 27536
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 0.2"
+					Top:    3.476"
+					Width:  0.85"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Right
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Data Field: dfZipTemp
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: String
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 1.133"
+						Top:    3.44"
+						Width:  1.767"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+					On SAM_Create
+						Set MyValue='10007'
+			Pushbutton: pbGetTemp
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Title: getTemperature (F)
+				Window Location and Size
+					Left: 3.017"
+					Top:    3.417"
+					Width:  2.0"
+					Width Editable? Yes
+					Height: 0.298"
+					Height Editable? Yes
+				Visible? Yes
+				Keyboard Accelerator: (none)
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Picture File Name:
+				Picture Transparent Color: None
+				Image Style: Single
+				Text Color: Default
+				Background Color: Default
+				Message Actions
+					On SAM_Click
+						Call SalWaitCursor(TRUE)
+						Set bOk=TRUE
+						!
+						Set bOk=bOk AND comWS.Init('http://services.xmethods.net:80/soap/servlet/rpcrouter', '')
+						If bOk
+							Set bOk=bOk AND comWS.PrepareOp('ns1:getTemp', 'urn:xmethods-Temperature')
+							Set bOk=bOk AND comWS.AddStringPar('zipcode', dfZipTemp)
+							Set bOk=bOk AND comWS.ExecuteOp('')
+							Set bOk=bOk AND comWS.GetNumberVal('return', dfTemp)
+							Call comWS.Done()
+						If NOT bOk
+							Call SalMessageBox ( SalNumberToStrX(comWS.GetError(FALSE), 0) || ' - ' || comWS.GetErrorText(), 'Error', MB_Ok)
+							Call comWS.GetError(TRUE)
+						!
+						!
+						Call SalWaitCursor(FALSE)
+			Background Text: >>
+				Resource Id: 27535
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Window Location and Size
+					Left: 5.083"
+					Top:    3.476"
+					Width:  0.183"
+					Width Editable? Yes
+					Height: 0.167"
+					Height Editable? Yes
+				Visible? Yes
+				Justify: Left
+				Font Name: Default
+				Font Size: Default
+				Font Enhancement: Default
+				Text Color: Default
+				Background Color: Default
+			Data Field: dfTemp
+				Class Child Ref Key: 0
+				Class ChildKey: 0
+				Class:
+				Property Template:
+				Class DLL Name:
+				Data
+					Maximum Data Length: Default
+					Data Type: Number
+					Editable? Yes
+				Display Settings
+					Window Location and Size
+						Left: 5.283"
+						Top:    3.44"
+						Width:  4.367"
+						Width Editable? Yes
+						Height: 0.25"
+						Height Editable? Yes
+					Visible? Yes
+					Border? Yes
+					Justify: Left
+					Format: Unformatted
+					Country: Default
+					Font Name: Default
+					Font Size: Default
+					Font Enhancement: Default
+					Text Color: Default
+					Background Color: Default
+					Input Mask: Unformatted
+				Message Actions
+			!
+			!
+		Functions
+			Function: ParseLocation
+				Description:
+				Returns
+					Boolean:
+				Parameters
+				Static Variables
+				Local variables
+					Boolean: bOk
+					: oDOMDocument
+						Class: MSXML_IXMLDOMDocument
+					: oDOMRootElement
+						Class: MSXML_IXMLDOMElement
+					: oDOMTableElement
+						Class: MSXML_IXMLDOMElement
+					: oDOMTableElementNext
+						Class: MSXML_IXMLDOMElement
+					: oDOMElement
+						Class: MSXML_IXMLDOMElement
+					: oDOMElement2
+						Class: MSXML_IXMLDOMElement
+				Actions
+					!
+					Set bOk=oDOMDocument.Create("Microsoft.XMLDOM")
+					Set bOk=bOk AND oDOMDocument.loadXML( mlLocation, bOk )
+					Set bOk=bOk AND oDOMDocument.PropGetfirstChild( oDOMRootElement )
+					!
+					Set bOk=bOk AND oDOMRootElement.PropGetfirstChild( oDOMTableElementNext )
+					While bOk AND oDOMTableElement.Attach( oDOMTableElementNext )
+						Call oDOMTableElementNext.Detach()
+						!
+						Call SalTblInsertRow(tblTowns, TBL_MaxRow)
+						!
+						Set bOk=bOk AND oDOMTableElement.PropGetfirstChild( oDOMElement )
+						Set bOk=bOk AND oDOMElement.PropGettext(tblTowns.colTown)
+						Set bOk=bOk AND oDOMElement.PropGetnextSibling( oDOMElement2 )
+						Set bOk=bOk AND oDOMElement2.PropGettext(tblTowns.colCounty)
+						Set bOk=bOk AND oDOMElement2.PropGetnextSibling( oDOMElement )
+						Set bOk=bOk AND oDOMElement.PropGettext(tblTowns.colPostCode)
+						!
+						If bOk
+							Call oDOMTableElement.PropGetnextSibling( oDOMTableElementNext )
+					Return bOk
+			Function: PrintNode
+				Description:
+				Returns
+				Parameters
+					: pNode
+						Class: MSXML_IXMLDOMElement
+					Receive String: pList
+					String: pDesl
+				Static Variables
+				Local variables
+					: oNodeList
+						Class: MSXML_IXMLDOMNodeList
+					: oNode
+						Class: MSXML_IXMLDOMElement
+					String: text
+					: vValue
+						Class: Variant
+					String: sString
+					Number: nTot
+					Number: nCont
+				Actions
+					Call pNode.PropGetnodeName( text )
+					Call pNode.PropGetnodeValue( vValue )
+					! Call pNode.getAttribute('href',vValue)
+					Call vValue.GetString( sString )
+					If text = STRING_Null
+						Return FALSE
+					Set pList = pList || '
+							' || pDesl || text || ' - [Valor: ' || sString || ']'
+					If pNode.PropGetchildNodes( oNodeList )
+						If oNodeList.PropGetlength( nTot )
+							Set nCont = 0
+							While nCont < nTot
+								If oNodeList.PropGetitem( nCont, oNode )
+									Call PrintNode( oNode, pList, pDesl || '  ' )
+									Set nCont = nCont + 1
+		Window Parameters
+		Window Variables
+			: comWS
+				Class: comClWS
+			!
+			String: s
+			Long String: ls
+			Number: n
+			!
+			Boolean: bOk
+			: oNode
+				Class: MSXML_IXMLDOMElement
+		Message Actions

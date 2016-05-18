@@ -1,0 +1,2504 @@
+Application Description: COM Web Services type library - generated&cleansed Microsoft XML, version 2.0.apl
+		Module:	comwstl.apl
+		Created:	2003-10-04
+		Author:	Lubos Vnuk (VNL)
+		Revision:	01 - 20031127 - VNL
+		DevTool:	SQLWindows/32 1.5.1 PTF6
+		
+		(c) Lubos Vnuk, 2003, http://sqlweb.vnuk.org/gup
+		This application library may be used freely as long as the copyright notice stays intact. It is provided "as is"
+		without warranty of any kind, express or implied, including but not limited to the warranties of merchantability,
+		fitness for a particular purpose and noninfringement. In no event shall Lubos Vnuk be liable for any claim,
+		damages or other liability in connection with the application library or the use or other dealings in the library.
+	Outline Version - 4.0.27
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400010000
+0020: 0000000000A50000 002C000000020000 0003000000FFFFFF FFFFFFFFFFF8FFFF
+0040: FFE2FFFFFFFFFFFF FF000000007C0200 004D010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+		Outline Window State: Normal
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+			Left: -0.013"
+			Top:    0.0"
+			Width:  8.013"
+			Height: 4.969"
+		Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left: 4.15"
+			Top:    1.885"
+			Width:  3.8"
+			Height: 2.073"
+		Class Editor Location
+			Visible? No
+			Left: 0.575"
+			Top:    0.094"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left: 6.388"
+			Top:    0.729"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? Yes
+		Use Release 4.0 Scope Rules? No
+	Libraries
+		File Include: Automation.apl
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: 3D Face Color
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0'%'
+			Number: #0
+			Number: ###000
+			Number: ###000;'($'###000')'
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+				Number: NODE__INVALID = 0
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__ELEMENT = 1
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__ATTRIBUTE = 2
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__TEXT = 3
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__CDATA_SECTION = 4
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__ENTITY_REFERENCE = 5
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__ENTITY = 6
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__PROCESSING_INSTRUCTION = 7
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__COMMENT = 8
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__DOCUMENT = 9
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__DOCUMENT_TYPE = 10
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__DOCUMENT_FRAGMENT = 11
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: NODE__NOTATION = 12
+					! This is one of the [tagDOMNodeType] Constants.
+				Number: XMLELEMTYPE_ELEMENT = 0
+					! This is one of the [tagXMLEMEM_TYPE] Constants.
+				Number: XMLELEMTYPE_TEXT = 1
+					! This is one of the [tagXMLEMEM_TYPE] Constants.
+				Number: XMLELEMTYPE_COMMENT = 2
+					! This is one of the [tagXMLEMEM_TYPE] Constants.
+				Number: XMLELEMTYPE_DOCUMENT = 3
+					! This is one of the [tagXMLEMEM_TYPE] Constants.
+				Number: XMLELEMTYPE_DTD = 4
+					! This is one of the [tagXMLEMEM_TYPE] Constants.
+				Number: XMLELEMTYPE_PI = 5
+					! This is one of the [tagXMLEMEM_TYPE] Constants.
+				Number: XMLELEMTYPE_OTHER = 6
+					! This is one of the [tagXMLEMEM_TYPE] Constants.
+			User
+		Resources
+		Variables
+		Internal Functions
+		Named Menus
+		Class Definitions
+			Functional Class: MSXML_IXMLDOMDocument
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGetdoctype
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMDocumentType
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("doctype", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetimplementation
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMImplementation
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("implementation", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetdocumentElement
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMElement
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("documentElement", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetdocumentElementByRef
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: rhs
+								Class: MSXML_IXMLDOMElement
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(rhs)
+							Set tmpret = Invoke("documentElement", INVOKE_PUTREF)
+							Call PopObject(0, rhs)
+							Call FlushArgs()
+							Return tmpret
+					Function: createElement
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: tagName
+							: returnValue
+								Class: MSXML_IXMLDOMElement
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(tagName)
+							Set tmpret = Invoke("createElement", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: createDocumentFragment
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMDocumentFragment
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("createDocumentFragment", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: createTextNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: data
+							: returnValue
+								Class: MSXML_IXMLDOMText
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(data)
+							Set tmpret = Invoke("createTextNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: createComment
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: data
+							: returnValue
+								Class: MSXML_IXMLDOMComment
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(data)
+							Set tmpret = Invoke("createComment", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: createCDATASection
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: data
+							: returnValue
+								Class: MSXML_IXMLDOMCDATASection
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(data)
+							Set tmpret = Invoke("createCDATASection", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: createProcessingInstruction
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: target
+							String: data
+							: returnValue
+								Class: MSXML_IXMLDOMProcessingInstructi
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(target)
+							Call PushString(data)
+							Set tmpret = Invoke("createProcessingInstruction", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: createAttribute
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: name
+							: returnValue
+								Class: MSXML_IXMLDOMAttribute
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(name)
+							Set tmpret = Invoke("createAttribute", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: createEntityReference
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: name
+							: returnValue
+								Class: MSXML_IXMLDOMEntityReference
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(name)
+							Set tmpret = Invoke("createEntityReference", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: getElementsByTagName
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: tagName
+							: returnValue
+								Class: MSXML_IXMLDOMNodeList
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(tagName)
+							Set tmpret = Invoke("getElementsByTagName", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: createNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: type
+								Class: Variant
+							String: name
+							String: namespaceURI
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(type)
+							Call PushString(name)
+							Call PushString(namespaceURI)
+							Set tmpret = Invoke("createNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: nodeFromID
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: idString
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(idString)
+							Set tmpret = Invoke("nodeFromID", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: load
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: xmlSource
+								Class: Variant
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(xmlSource)
+							Set tmpret = Invoke("load", INVOKE_FUNCTION)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetreadyState
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("readyState", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetparseError
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMParseError
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("parseError", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGeturl
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("url", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetasync
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("async", INVOKE_GET)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetasync
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: rhs
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushBoolean(rhs)
+							Set tmpret = Invoke("async", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: abort
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("abort", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: loadXML
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: bstrXML
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(bstrXML)
+							Set tmpret = Invoke("loadXML", INVOKE_FUNCTION)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: save
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: destination
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(destination)
+							Set tmpret = Invoke("save", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetvalidateOnParse
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("validateOnParse", INVOKE_GET)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetvalidateOnParse
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: rhs
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushBoolean(rhs)
+							Set tmpret = Invoke("validateOnParse", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetresolveExternals
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("resolveExternals", INVOKE_GET)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetresolveExternals
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: rhs
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushBoolean(rhs)
+							Set tmpret = Invoke("resolveExternals", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetpreserveWhiteSpace
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("preserveWhiteSpace", INVOKE_GET)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetpreserveWhiteSpace
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: rhs
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushBoolean(rhs)
+							Set tmpret = Invoke("preserveWhiteSpace", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetonreadystatechange
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: rhs
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(rhs)
+							Set tmpret = Invoke("onreadystatechange", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetondataavailable
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: rhs
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(rhs)
+							Set tmpret = Invoke("ondataavailable", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetontransformnode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: rhs
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(rhs)
+							Set tmpret = Invoke("ontransformnode", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLHttpRequest
+				Description:
+				Derived From
+					Class: Object
+				Class Variables
+				Instance Variables
+				Functions
+					Function: open
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: bstrMethod
+							String: bstrUrl
+							: varAsync
+								Class: Variant
+							: bstrUser
+								Class: Variant
+							: bstrPassword
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(bstrMethod)
+							Call PushString(bstrUrl)
+							Call PushVariant(varAsync)
+							Call PushVariant(bstrUser)
+							Call PushVariant(bstrPassword)
+							Set tmpret = Invoke("open", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: setRequestHeader
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: bstrHeader
+							String: bstrValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(bstrHeader)
+							Call PushString(bstrValue)
+							Set tmpret = Invoke("setRequestHeader", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: getResponseHeader
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: bstrHeader
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(bstrHeader)
+							Set tmpret = Invoke("getResponseHeader", INVOKE_FUNCTION)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: getAllResponseHeaders
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("getAllResponseHeaders", INVOKE_FUNCTION)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: send
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: varBody
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(varBody)
+							Set tmpret = Invoke("send", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: abort
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("abort", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetstatus
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("status", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetstatusText
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("statusText", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetresponseXML
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Object
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("responseXML", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetresponseText
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("responseText", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetresponseBody
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("responseBody", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetresponseStream
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("responseStream", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetreadyState
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("readyState", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetonreadystatechange
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: rhs
+								Class: Object
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObject(rhs)
+							Set tmpret = Invoke("onreadystatechange", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMParseError
+				Description:
+				Derived From
+					Class: Object
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGeterrorCode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("errorCode", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGeturl
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("url", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetreason
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("reason", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetsrcText
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("srcText", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetline
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("line", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetlinepos
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("linepos", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetfilepos
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("filepos", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMNode
+				Description:
+				Derived From
+					Class: Object
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGetnodeName
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("nodeName", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetnodeValue
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("nodeValue", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetnodeValue
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: rhs
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(rhs)
+							Set tmpret = Invoke("nodeValue", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetnodeType
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+								! Important: this is one of the [tagDOMNodeType] constants
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("nodeType", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetparentNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("parentNode", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetchildNodes
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNodeList
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("childNodes", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetfirstChild
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("firstChild", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetlastChild
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("lastChild", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetpreviousSibling
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("previousSibling", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetnextSibling
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("nextSibling", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetattributes
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNamedNodeMap
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("attributes", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: insertBefore
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: newChild
+								Class: MSXML_IXMLDOMNode
+							: refChild
+								Class: Variant
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(newChild)
+							Call PushVariant(refChild)
+							Set tmpret = Invoke("insertBefore", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call PopObject(0, newChild)
+							Call FlushArgs()
+							Return tmpret
+					Function: replaceChild
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: newChild
+								Class: MSXML_IXMLDOMNode
+							: oldChild
+								Class: MSXML_IXMLDOMNode
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(newChild)
+							Call PushObjectByRef(oldChild)
+							Set tmpret = Invoke("replaceChild", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call PopObject(0, newChild)
+							Call PopObject(1, oldChild)
+							Call FlushArgs()
+							Return tmpret
+					Function: removeChild
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: childNode
+								Class: MSXML_IXMLDOMNode
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(childNode)
+							Set tmpret = Invoke("removeChild", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call PopObject(0, childNode)
+							Call FlushArgs()
+							Return tmpret
+					Function: appendChild
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: newChild
+								Class: MSXML_IXMLDOMNode
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(newChild)
+							Set tmpret = Invoke("appendChild", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call PopObject(0, newChild)
+							Call FlushArgs()
+							Return tmpret
+					Function: hasChildNodes
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("hasChildNodes", INVOKE_FUNCTION)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetownerDocument
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMDocument
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("ownerDocument", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: cloneNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Boolean: deep
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushBoolean(deep)
+							Set tmpret = Invoke("cloneNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetnodeTypeString
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("nodeTypeString", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGettext
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("text", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSettext
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: rhs
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(rhs)
+							Set tmpret = Invoke("text", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetspecified
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("specified", INVOKE_GET)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetdefinition
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("definition", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetnodeTypedValue
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("nodeTypedValue", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetnodeTypedValue
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: rhs
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(rhs)
+							Set tmpret = Invoke("nodeTypedValue", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetdataType
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("dataType", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetdataType
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: rhs
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(rhs)
+							Set tmpret = Invoke("dataType", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetxml
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("xml", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: transformNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: stylesheet
+								Class: MSXML_IXMLDOMNode
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(stylesheet)
+							Set tmpret = Invoke("transformNode", INVOKE_FUNCTION)
+							Call PopString(-1, returnValue)
+							Call PopObject(0, stylesheet)
+							Call FlushArgs()
+							Return tmpret
+					Function: selectNodes
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: queryString
+							: returnValue
+								Class: MSXML_IXMLDOMNodeList
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(queryString)
+							Set tmpret = Invoke("selectNodes", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: selectSingleNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: queryString
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(queryString)
+							Set tmpret = Invoke("selectSingleNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetparsed
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("parsed", INVOKE_GET)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetnamespaceURI
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("namespaceURI", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetprefix
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("prefix", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetbaseName
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("baseName", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: transformNodeToObject
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: stylesheet
+								Class: MSXML_IXMLDOMNode
+							: outputObject
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(stylesheet)
+							Call PushVariant(outputObject)
+							Set tmpret = Invoke("transformNodeToObject", INVOKE_FUNCTION)
+							Call PopObject(0, stylesheet)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMNodeList
+				Description:
+				Derived From
+					Class: Object
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGetitem
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: index
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushNumber(index, VT_I4)
+							Set tmpret = Invoke("item", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetlength
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("length", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: nextNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("nextNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: reset
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("reset", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMNamedNodeMap
+				Description:
+				Derived From
+					Class: Object
+				Class Variables
+				Instance Variables
+				Functions
+					Function: getNamedItem
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: name
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(name)
+							Set tmpret = Invoke("getNamedItem", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: setNamedItem
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: newItem
+								Class: MSXML_IXMLDOMNode
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(newItem)
+							Set tmpret = Invoke("setNamedItem", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call PopObject(0, newItem)
+							Call FlushArgs()
+							Return tmpret
+					Function: removeNamedItem
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: name
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(name)
+							Set tmpret = Invoke("removeNamedItem", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetitem
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: index
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushNumber(index, VT_I4)
+							Set tmpret = Invoke("item", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetlength
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("length", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: getQualifiedItem
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: baseName
+							String: namespaceURI
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(baseName)
+							Call PushString(namespaceURI)
+							Set tmpret = Invoke("getQualifiedItem", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: removeQualifiedItem
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: baseName
+							String: namespaceURI
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(baseName)
+							Call PushString(namespaceURI)
+							Set tmpret = Invoke("removeQualifiedItem", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: nextNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("nextNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: reset
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("reset", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMImplementation
+				Description:
+				Derived From
+					Class: Object
+				Class Variables
+				Instance Variables
+				Functions
+					Function: hasFeature
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: feature
+							String: version
+							Receive Boolean: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(feature)
+							Call PushString(version)
+							Set tmpret = Invoke("hasFeature", INVOKE_FUNCTION)
+							Call PopBoolean(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMDocumentType
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGetname
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("name", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetentities
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNamedNodeMap
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("entities", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetnotations
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: MSXML_IXMLDOMNamedNodeMap
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("notations", INVOKE_GET)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMElement
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGettagName
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("tagName", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: getAttribute
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: name
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(name)
+							Set tmpret = Invoke("getAttribute", INVOKE_FUNCTION)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: setAttribute
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: name
+							: value
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(name)
+							Call PushVariant(value)
+							Set tmpret = Invoke("setAttribute", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: removeAttribute
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: name
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(name)
+							Set tmpret = Invoke("removeAttribute", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: getAttributeNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: name
+							: returnValue
+								Class: MSXML_IXMLDOMAttribute
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(name)
+							Set tmpret = Invoke("getAttributeNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: setAttributeNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: DOMAttribute
+								Class: MSXML_IXMLDOMAttribute
+							: returnValue
+								Class: MSXML_IXMLDOMAttribute
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(DOMAttribute)
+							Set tmpret = Invoke("setAttributeNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call PopObject(0, DOMAttribute)
+							Call FlushArgs()
+							Return tmpret
+					Function: removeAttributeNode
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: DOMAttribute
+								Class: MSXML_IXMLDOMAttribute
+							: returnValue
+								Class: MSXML_IXMLDOMAttribute
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushObjectByRef(DOMAttribute)
+							Set tmpret = Invoke("removeAttributeNode", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call PopObject(0, DOMAttribute)
+							Call FlushArgs()
+							Return tmpret
+					Function: getElementsByTagName
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: tagName
+							: returnValue
+								Class: MSXML_IXMLDOMNodeList
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(tagName)
+							Set tmpret = Invoke("getElementsByTagName", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: normalize
+						Description:
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("normalize", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMAttribute
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGetname
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("name", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetvalue
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("value", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetvalue
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: rhs
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushVariant(rhs)
+							Set tmpret = Invoke("value", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMDocumentFragment
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+			Functional Class: MSXML_IXMLDOMText
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMCharacterData
+				Class Variables
+				Instance Variables
+				Functions
+					Function: splitText
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: offset
+							: returnValue
+								Class: MSXML_IXMLDOMText
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushNumber(offset, VT_I4)
+							Set tmpret = Invoke("splitText", INVOKE_FUNCTION)
+							Call PopObject(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMCharacterData
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGetdata
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("data", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetdata
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: rhs
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(rhs)
+							Set tmpret = Invoke("data", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetlength
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive Number: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("length", INVOKE_GET)
+							Call PopNumber(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: substringData
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: offset
+							Number: count
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushNumber(offset, VT_I4)
+							Call PushNumber(count, VT_I4)
+							Set tmpret = Invoke("substringData", INVOKE_FUNCTION)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: appendData
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: data
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(data)
+							Set tmpret = Invoke("appendData", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: insertData
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: offset
+							String: data
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushNumber(offset, VT_I4)
+							Call PushString(data)
+							Set tmpret = Invoke("insertData", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: deleteData
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: offset
+							Number: count
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushNumber(offset, VT_I4)
+							Call PushNumber(count, VT_I4)
+							Set tmpret = Invoke("deleteData", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+					Function: replaceData
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Number: offset
+							Number: count
+							String: data
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushNumber(offset, VT_I4)
+							Call PushNumber(count, VT_I4)
+							Call PushString(data)
+							Set tmpret = Invoke("replaceData", INVOKE_FUNCTION)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMComment
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMCharacterData
+				Class Variables
+				Instance Variables
+				Functions
+			Functional Class: MSXML_IXMLDOMProcessingInstructi
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGettarget
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("target", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetdata
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("data", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropSetdata
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							String: rhs
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Call PushString(rhs)
+							Set tmpret = Invoke("data", INVOKE_PUT)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMEntity
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGetpublicId
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("publicId", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetsystemId
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("systemId", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetnotationName
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							Receive String: returnValue
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("notationName", INVOKE_GET)
+							Call PopString(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+			Functional Class: MSXML_IXMLDOMEntityReference
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMNode
+				Class Variables
+				Instance Variables
+				Functions
+			Functional Class: MSXML_IXMLDOMCDATASection
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMText
+				Class Variables
+				Instance Variables
+				Functions
+			Functional Class: MSXML_IXMLDOMNotation
+				Description:
+				Derived From
+					Class: MSXML_IXMLDOMText
+				Class Variables
+				Instance Variables
+				Functions
+					Function: PropGetpublicId
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("publicId", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+					Function: PropGetsystemId
+						Description:
+						Returns
+							Boolean:
+						Parameters
+							: returnValue
+								Class: Variant
+						Static Variables
+						Local variables
+							Boolean: tmpret
+						Actions
+							Set tmpret = Invoke("systemId", INVOKE_GET)
+							Call PopVariant(-1, returnValue)
+							Call FlushArgs()
+							Return tmpret
+		Default Classes
+			MDI Window: cBaseMDI
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			Check Box:
+			Child Table:
+			Quest Child Window: cQuickDatabase
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+			ActiveX:
+		Application Actions

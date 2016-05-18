@@ -1,0 +1,1482 @@
+Application Description: COM Web Services Interface library
+		Module:	comws.apl
+		Created:	2003-10-04
+		Author:	Lubos Vnuk (VNL)
+		Revision:	04 - 20040712 - VNL
+		DevTool:	SQLWindows/32 1.5.1 PTF6
+		
+		(c) Lubos Vnuk, 2003, http://sqlweb.vnuk.org/gup
+		This application library may be used freely as long as the copyright notice stays intact. It is provided "as is"
+		without warranty of any kind, express or implied, including but not limited to the warranties of merchantability,
+		fitness for a particular purpose and noninfringement. In no event shall Lubos Vnuk be liable for any claim,
+		damages or other liability in connection with the application library or the use or other dealings in the library.
+	Outline Version - 4.0.27
+	Design-time Settings
+.data VIEWINFO
+0000: 6F00000001000000 FFFF01000D004347 5458566965775374 6174650400080000
+0020: 0000000000AB0000 002C000000020000 0003000000FFFFFF FFFFFFFFFFF8FFFF
+0040: FFE2FFFFFFFFFFFF FF000000007C0200 004D010000010000 0001000000010000
+0060: 000F4170706C6963 6174696F6E497465 6D00000000
+.enddata
+.data DT_MAKERUNDLG
+0000: 020000000012433A 5C445C776F72645C 776F72642E657865 12433A5C445C776F
+0020: 72645C776F72642E 646C6C12433A5C44 5C776F72645C776F 72642E6170630000
+0040: 01010112433A5C44 5C776F72645C776F 72642E72756E1243 3A5C445C776F7264
+0060: 5C776F72642E646C 6C12433A5C445C77 6F72645C776F7264 2E61706300000101
+0080: 010B677870776431 352E61706408776F 72642E646C6C0877 6F72642E61706300
+00A0: 0001010112433A5C 445C776F72645C77 6F72642E61706C12 433A5C445C776F72
+00C0: 645C776F72642E64 6C6C12433A5C445C 776F72645C776F72 642E617063000001
+00E0: 0101
+.enddata
+		Outline Window State: Normal
+		Outline Window Location and Size
+.data VIEWINFO
+0000: 6600040003002D00 0000000000000000 0000B71E5D0E0500 1D00FFFF4D61696E
+0020: 0000000000000000 0000000000000000 0000003B00010000 00000000000000E9
+0040: 1E800A00008600FF FF496E7465726E61 6C2046756E637469 6F6E730000000000
+0060: 0000000000000000 0000000000003200 0100000000000000 0000E91E800A0000
+0080: DF00FFFF56617269 61626C6573000000 0000000000000000 0000000000000000
+00A0: 3000010000000000 00000000F51E100D 0000F400FFFF436C 6173736573000000
+00C0: 0000000000000000 0000000000000000
+.enddata
+.data VIEWSIZE
+0000: D000
+.enddata
+			Left: -0.013"
+			Top:    0.0"
+			Width:  8.013"
+			Height: 4.969"
+		Options Box Location
+.data VIEWINFO
+0000: D4180909B80B1A00
+.enddata
+.data VIEWSIZE
+0000: 0800
+.enddata
+			Visible? Yes
+			Left: 4.15"
+			Top:    1.885"
+			Width:  3.8"
+			Height: 2.073"
+		Class Editor Location
+			Visible? No
+			Left: 0.575"
+			Top:    0.094"
+			Width:  5.063"
+			Height: 2.719"
+		Tool Palette Location
+			Visible? No
+			Left: 6.388"
+			Top:    0.729"
+		Fully Qualified External References? Yes
+		Reject Multiple Window Instances? No
+		Enable Runtime Checks Of External References? Yes
+		Use Release 4.0 Scope Rules? No
+	Libraries
+		File Include: comwstl.apt
+	Global Declarations
+		Window Defaults
+			Tool Bar
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Form Window
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Dialog Box
+				Display Style? Etched
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Top Level Table Window
+				Font Name: MS Sans Serif
+				Font Size: 8
+				Font Enhancement: System Default
+				Text Color: System Default
+				Background Color: System Default
+			Data Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Multiline Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Spin Field
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Background Text
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Pushbutton
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Radio Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Check Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Option Button
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+			Group Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Child Table Window
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			List Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Combo Box
+				Font Name: Use Parent
+				Font Size: Use Parent
+				Font Enhancement: Use Parent
+				Text Color: Use Parent
+				Background Color: Use Parent
+			Line
+				Line Color: Use Parent
+			Frame
+				Border Color: Use Parent
+				Background Color: 3D Face Color
+			Picture
+				Border Color: Use Parent
+				Background Color: Use Parent
+		Formats
+			Number: 0'%'
+			Number: #0
+			Number: ###000
+			Number: ###000;'($'###000')'
+			Date/Time: hh:mm:ss AMPM
+			Date/Time: M/d/yy
+			Date/Time: MM-dd-yy
+			Date/Time: dd-MMM-yyyy
+			Date/Time: MMM d, yyyy
+			Date/Time: MMM d, yyyy hh:mm AMPM
+			Date/Time: MMMM d, yyyy hh:mm AMPM
+		External Functions
+		Constants
+.data CCDATA
+0000: 3000000000000000 0000000000000000 00000000
+.enddata
+.data CCSIZE
+0000: 1400
+.enddata
+			System
+			User
+		Resources
+		Variables
+		Internal Functions
+		Named Menus
+		Class Definitions
+			Functional Class: comClWS
+				Description: COM Web Services Interface
+						(c) Lubos Vnuk, 2003
+						http://sqlweb.vnuk.org/gup
+				Derived From
+				Class Variables
+				Instance Variables
+					: i_oSoapRequest
+						Class: MSXML_IXMLDOMDocument
+					: i_oSoapResponse
+						Class: MSXML_IXMLDOMDocument
+					!
+					: i_oElement
+						Class: MSXML_IXMLDOMElement
+					!
+					String: i_sURL
+					String: i_sHttpUser
+					String: i_sHttpPassword
+					!
+					: i_Error
+						Class: OleErrorInfo
+					!
+					String: SoapXMLVersionNum
+					String: SoapXMLEncName
+					String: SoapEnvelopeTag
+					String: SoapNamespaceDecl
+					String: SoapNamespace
+					String: SoapBodyTag
+					String: SoapOpNamespaceDecl
+					String: SoapFaultTag
+					String: SoapFaultCodeTag
+					String: SoapFaultStringTag
+					String: HttpMethod
+					String: HttpActionHeaderName
+				Functions
+					!
+					! Construction/Destruction
+					Function: Init
+						Description: Initializes the instance.
+								Parameters:
+									p_sURL		URL of the Web Service
+									p_sHttpAccess	Optional user name and password for the HTTP access
+											in the format: 'username/password'
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+						Returns
+							Boolean:
+						Parameters
+							String: p_sURL
+							String: p_sHttpAccess
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							Number: l_nTemp
+						Actions
+							Call SalActiveXAutoErrorMode( FALSE )
+							Set l_bOk=i_oSoapRequest.Create("Microsoft.XMLDOM")
+							If l_bOk
+								Set i_sURL=p_sURL
+								Set l_nTemp=SalStrScan(p_sHttpAccess, '/')
+								If l_nTemp != -1
+									Set i_sHttpUser=SalStrLeftX(p_sHttpAccess, l_nTemp)
+									Set i_sHttpPassword=SalStrRightX(p_sHttpAccess, SalStrLength(p_sHttpAccess) - l_nTemp -1 )
+								Else
+									Set i_sHttpUser=p_sHttpAccess
+									Set i_sHttpPassword=STRING_Null
+								!
+								Set SoapXMLVersionNum='1.0'
+								Set SoapXMLEncName='UTF-8'
+								Set SoapEnvelopeTag='soap:Envelope'
+								Set SoapNamespaceDecl='xmlns:soap'
+								Set SoapNamespace='http://schemas.xmlsoap.org/soap/envelope/'
+								Set SoapBodyTag='soap:Body'
+								Set SoapOpNamespaceDecl='xmlns'
+								Set SoapFaultTag='fault'
+								Set SoapFaultCodeTag='faultcode'
+								Set SoapFaultStringTag='faultstring'
+								Set HttpMethod='POST'
+								Set HttpActionHeaderName='SOAPAction'
+								!
+								Call GetError(TRUE)
+							Else
+								Set i_Error.scode=1
+								Set i_Error.description='Unable to create an XML Document. Please install MS XML version 2.0 or newer.'
+								Return FALSE
+							Return l_bOk OR __FetchError()
+					Function: Done
+						Description: Detaches all instance objects.
+								Parameters: None
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Call i_oElement.Detach()
+							Call i_oSoapResponse.Detach()
+							Call i_oSoapRequest.Detach()
+							Return TRUE
+					Function: Reconfigure
+						Description: Sets the specified internal configuration variable.
+								Parameters:
+									p_sVarName	Internal configuration variable name
+									p_sValue		Internal configuration variable value
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+								
+								Note: This method is for the advanced use only. These are the supported configuration variables:
+								SoapXMLVersionNum, SoapXMLEncName, SoapEnvelopeTag, SoapNamespaceDecl, SoapNamespace,
+								SoapBodyTag, SoapOpNamespaceDecl, SoapFaultTag, SoapFaultCodeTag, SoapFaultStringTag,
+								HttpMethod, HttpActionHeaderName
+						Returns
+							Boolean:
+						Parameters
+							String: p_sVarName
+							String: p_sValue
+						Static Variables
+						Local variables
+							String: l_sVarName
+							Number: l_nIndex
+						Actions
+							! Avoiding the SalCompileAndEvaluate() function for now:
+							Set l_sVarName='~' || p_sVarName || '~'
+							Set l_nIndex=SalStrScan(
+									'~SoapXMLVersionNum~SoapXMLEncName~SoapEnvelopeTag~SoapNamespaceDecl~SoapNamespace~SoapBodyTag~SoapOpNamespaceDecl~SoapFaultTag~SoapFaultCodeTag~SoapFaultStringTag~HttpMethod~HttpActionHeaderName~',
+									l_sVarName)
+							Select Case l_nIndex
+								Case 0
+									Set SoapXMLVersionNum=p_sValue
+									Break
+								Case 18
+									Set SoapXMLEncName=p_sValue
+									Break
+								Case 33
+									Set SoapEnvelopeTag=p_sValue
+									Break
+								Case 49
+									Set SoapNamespaceDecl=p_sValue
+									Break
+								Case 67
+									Set SoapNamespace=p_sValue
+									Break
+								Case 81
+									Set SoapBodyTag=p_sValue
+									Break
+								Case 93
+									Set SoapOpNamespaceDecl=p_sValue
+									Break
+								Case 113
+									Set SoapFaultTag=p_sValue
+									Break
+								Case 126
+									Set SoapFaultCodeTag=p_sValue
+									Break
+								Case 143
+									Set SoapFaultStringTag=p_sValue
+									Break
+								Case 162
+									Set HttpMethod=p_sValue
+									Break
+								Case 173
+									Set HttpActionHeaderName=p_sValue
+									Break
+								Default
+									Set i_Error.scode=3
+									Set i_Error.description='Invalid configuration variable: ' || p_sVarName
+									Return FALSE
+							Return TRUE
+					!
+					! SOAP Operation
+					Function: PrepareOp
+						Description: Prepares the SOAP envelope for the successive ExecuteOP() call.
+								Parameters:
+									p_sOpName	Operation name
+									p_sOpNamespace	Operation namespace
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+								
+								Note: After the successful preparation, the operation element of the SOAP Request
+								will automaticly become the current element for your convenience to use
+								the AddXXXXPar() methods to specify all needed parameters before execution.
+						Returns
+							Boolean:
+						Parameters
+							String: p_sOpName
+							String: p_sOpNamespace
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oPI
+								Class: MSXML_IXMLDOMProcessingInstructi
+							: l_oEnvelope
+								Class: MSXML_IXMLDOMElement
+							: l_oBody
+								Class: MSXML_IXMLDOMElement
+							: l_oOp
+								Class: MSXML_IXMLDOMElement
+							: l_vNamespace
+								Class: Variant
+							!
+							String: l_sOpPrefix
+							String: l_sPI
+						Actions
+							Set l_bOk=TRUE
+							!
+							If SoapXMLVersionNum
+								Set l_sPI='version="' || SoapXMLVersionNum || '" '
+							If SoapXMLEncName
+								Set l_sPI=l_sPI || 'encoding="' || SoapXMLEncName || '"'
+							If l_sPI
+								Set l_bOk=l_bOk AND i_oSoapRequest.createProcessingInstruction('xml', l_sPI, l_oPI)
+								Set l_bOk=l_bOk AND i_oSoapRequest.appendChild(l_oPI, l_oPI)
+							!
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(SoapEnvelopeTag, l_oEnvelope )
+							If SoapNamespaceDecl
+								Set l_bOk=l_bOk AND l_vNamespace.SetString(SoapNamespace)
+								Set l_bOk=l_bOk AND l_oEnvelope.setAttribute(SoapNamespaceDecl, l_vNamespace)
+							Set l_bOk=l_bOk AND i_oSoapRequest.appendChild(l_oEnvelope, l_oEnvelope)
+							!
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(SoapBodyTag, l_oBody )
+							Set l_bOk=l_bOk AND l_oEnvelope.appendChild(l_oBody, l_oBody)
+							!
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sOpName, l_oOp )
+							Set l_bOk=l_bOk AND l_oOp.PropGetprefix(l_sOpPrefix)
+							If l_sOpPrefix
+								Set l_sOpPrefix=':' || l_sOpPrefix
+							If SoapOpNamespaceDecl
+								Set l_bOk=l_bOk AND l_vNamespace.SetString(p_sOpNamespace)
+								Set l_bOk=l_bOk AND l_oOp.setAttribute(SoapOpNamespaceDecl || l_sOpPrefix, l_vNamespace)
+							Set l_bOk=l_bOk AND l_oBody.appendChild(l_oOp, l_oOp)
+							!
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oOp)
+							Return l_bOk OR __FetchErrorX(l_oEnvelope) OR __FetchErrorX(l_oBody) OR __FetchError()
+					Function: ExecuteOp
+						Description: Executes the formerly prepared SOAP call operation.
+								Parameters:
+									p_sSoapAction	SoapAction parameter for the HTTP header
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+								
+								Note: After the successful execution, the response element of the SOAP Response
+								will become the current element. Subsequently you can call GetXXXXVal() and
+								SelectXXXX() methods to access the operation's return values.
+						Returns
+							Boolean:
+						Parameters
+							String: p_sSoapAction
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oHTTP
+								Class: MSXML_IXMLHttpRequest
+							!
+							: l_vAsync
+								Class: Variant
+							: l_vUser
+								Class: Variant
+							: l_vPassword
+								Class: Variant
+							String: l_sHttpCharset
+							!
+							: l_vBody
+								Class: Variant
+							!
+							: l_oEnvelope
+								Class: MSXML_IXMLDOMElement
+							String: l_sEnvelopeNamespace
+							: l_oBody
+								Class: MSXML_IXMLDOMElement
+							String: l_sParNamespace
+							String: l_sBaseName
+							Number: l_nStatus
+							String: l_sStatus
+							String: l_sFaultCode
+							String: l_sFaultString
+						Actions
+							Set l_bOk=TRUE
+							!
+							If NOT l_oHTTP.Create("Microsoft.XMLHTTP")
+								Set i_Error.scode=2
+								Set i_Error.description='MS XML 2.0+ installation problem: Unable to create an XML HTTP request.'
+								Return FALSE
+							Set l_bOk=l_bOk AND l_vAsync.SetBoolean(FALSE) AND l_vUser.SetString(i_sHttpUser) AND l_vPassword.SetString(i_sHttpPassword)
+							Set l_bOk=l_bOk AND l_oHTTP.open(HttpMethod, i_sURL, l_vAsync, l_vUser, l_vPassword )
+							If SoapXMLEncName
+								Set l_sHttpCharset=SoapXMLEncName
+							Else
+								Set l_sHttpCharset='UTF-8'
+							Set l_bOk=l_bOk AND l_oHTTP.setRequestHeader('Content-Type', 'text/xml; charset="' || l_sHttpCharset || '"')
+							Set l_bOk=l_bOk AND l_oHTTP.setRequestHeader(HttpActionHeaderName, '"' || p_sSoapAction || '"')
+							Set l_bOk=l_bOk AND l_vBody.SetObject(i_oSoapRequest)
+							If l_bOk AND NOT l_oHTTP.send(l_vBody)
+								Call __FetchErrorX(l_oHTTP)
+								If NOT i_Error.description
+									Set i_Error.description='The HTTP request cannot be sent !
+											A network connection problem or the Web service is currently down:
+											' || i_sURL
+								Return FALSE
+							Set l_bOk=l_bOk AND l_oHTTP.PropGetresponseXML(i_oSoapResponse)
+							!
+							If l_bOk
+								Set l_bOk=l_bOk AND i_oSoapResponse.PropGetdocumentElement(l_oEnvelope)
+								Set l_bOk=l_bOk AND l_oEnvelope.PropGetnamespaceURI(l_sEnvelopeNamespace)
+								Set l_bOk=l_bOk AND l_oEnvelope.PropGetfirstChild(l_oBody)
+								Set l_bOk=l_bOk AND l_oBody.PropGetfirstChild(i_oElement)
+								Set l_bOk=l_bOk AND i_oElement.PropGetnamespaceURI(l_sParNamespace)
+								Set l_bOk=l_bOk AND i_oElement.PropGetbaseName(l_sBaseName)
+								If NOT l_bOk
+									If i_Error.scode=0 AND i_Error.wcode=0
+										Set i_Error.scode=96
+										Call l_oHTTP.PropGetstatus(l_nStatus)
+										Call l_oHTTP.PropGetstatusText(l_sStatus)
+										Call i_oSoapResponse.PropGetxml(l_sFaultString)
+										Set i_Error.description='Invalid SOAP Response (HTTP status: ' || SalNumberToStrX(l_nStatus, 0) || '-' || l_sStatus || '):
+												
+												' || l_sFaultString
+										Return FALSE
+							If l_bOk AND l_sParNamespace=l_sEnvelopeNamespace AND SalStrLowerX(l_sBaseName)=SoapFaultTag
+								Call l_oHTTP.PropGetstatus(l_nStatus)
+								Call l_oHTTP.PropGetstatusText(l_sStatus)
+								If SoapFaultCodeTag
+									Call GetStringVal(SoapFaultCodeTag, l_sFaultCode)
+								If SoapFaultStringTag
+									Call GetStringVal(SoapFaultStringTag, l_sFaultString)
+								Set i_Error.scode=l_nStatus
+								Set i_Error.description=l_sStatus || '
+										' || l_sFaultCode || '
+										' || l_sFaultString
+								Return FALSE
+							!
+							Return l_bOk OR __FetchErrorX(l_oHTTP) OR __FetchErrorX(l_oEnvelope) OR __FetchErrorX(l_oBody)
+					!
+					! Parameter building
+					Function: AddStringPar
+						Description: Adds a string parameter to the current element.
+								Parameters:
+									p_sName		Parameter name
+									p_sValue		Parameter value
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							String: p_sValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oParam )
+							Set l_bOk=l_bOk AND l_oParam.PropSettext(p_sValue)
+							Set l_bOk=l_bOk AND i_oElement.appendChild(l_oParam, l_oParam)
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: AddBooleanPar
+						Description: Adds a boolean parameter to the current element.
+								Parameters:
+									p_sName		Parameter name
+									p_bValue		Parameter value (NUMBER_Null is supported)
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Boolean: p_bValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oParam )
+							If p_bValue=TRUE
+								Set l_bOk=l_bOk AND l_oParam.PropSettext('true')
+							Else If p_bValue=FALSE
+								Set l_bOk=l_bOk AND l_oParam.PropSettext('false')
+							Set l_bOk=l_bOk AND i_oElement.appendChild(l_oParam, l_oParam)
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: AddIntegerPar
+						Description: Adds an integer parameter to the current element.
+								Parameters:
+									p_sName		Parameter name
+									p_nValue		Parameter value (NUMBER_Null is supported)
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+								
+								Note: Use this method for these XML data types: integer, nonPositiveInteger, negativeInteger, long, int, short,
+								byte, nonNegativeInteger, unsignedLong, unsignedInt, unsignedShort, unsignedByte, positiveInteger
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Number: p_nValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oParam )
+							If p_nValue != NUMBER_Null
+								Set l_bOk=l_bOk AND l_oParam.PropSettext(SalNumberToStrX(p_nValue,0))
+							Set l_bOk=l_bOk AND i_oElement.appendChild(l_oParam, l_oParam)
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: AddDecimalPar
+						Description: Adds a decimal parameter to the current element.
+								Parameters:
+									p_sName		Parameter name
+									p_nValue		Parameter value (NUMBER_Null is supported)
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+								
+								Note: Use this method for these XML data types: decimal, float, double
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Number: p_nValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+							String: l_sDT
+							Number: l_nDecPart
+							!
+							String: l_sValue
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oParam )
+							!
+							If p_nValue=NUMBER_Null
+								Set l_sValue=''
+							Else
+								! get the canonical representation for decimal or non-cannonical for float and double
+								If p_nValue<0
+									Set l_nDecPart=SalNumberMod(-p_nValue,1)
+								Else
+									Set l_nDecPart=SalNumberMod(p_nValue,1)
+								Set l_sValue=SalStrMidX(SalFmtFormatNumber (l_nDecPart, '00############################################'), SalStrLength(SalFmtFormatNumber ( 0, '00'))-1, 999)
+								If l_sValue
+									Set l_sValue=SalNumberToStrX(p_nValue,0) || '.' || l_sValue
+								Else
+									Set l_sValue=SalNumberToStrX(p_nValue,0) || '.0'
+							Set l_bOk=l_bOk AND l_oParam.PropSettext(l_sValue)
+							Set l_bOk=l_bOk AND i_oElement.appendChild(l_oParam, l_oParam)
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: AddDateTimePar
+						Description: Adds a dateTime parameter to the current element.
+								Parameters:
+									p_sName		Parameter name
+									p_dValue		Parameter value (DATETIME_Null is supported)
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Date/Time: p_dValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oParam )
+							If p_dValue != DATETIME_Null
+								Set l_bOk=l_bOk AND l_oParam.PropSettext(SalFmtFormatDateTime(p_dValue, 'yyyy-MM-dd') || 'T' || SalFmtFormatDateTime(p_dValue, 'hhhh:mm:ss') || '.' || SalStrLeftX(SalFmtFormatDateTime(p_dValue, 'mmmmmm') ,3))
+							Set l_bOk=l_bOk AND i_oElement.appendChild(l_oParam, l_oParam)
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: AddDatePar
+						Description: Adds a date parameter to the current element.
+								Parameters:
+									p_sName		Parameter name
+									p_dValue		Parameter value (DATETIME_Null is supported)
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Date/Time: p_dValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oParam )
+							If p_dValue != DATETIME_Null
+								Set l_bOk=l_bOk AND l_oParam.PropSettext(SalFmtFormatDateTime(p_dValue, 'yyyy-MM-dd'))
+							Set l_bOk=l_bOk AND i_oElement.appendChild(l_oParam, l_oParam)
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: AddTimePar
+						Description: Adds a time parameter to the current element.
+								Parameters:
+									p_sName		Parameter name
+									p_dValue		Parameter value (DATETIME_Null is supported)
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Date/Time: p_dValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oParam )
+							If p_dValue != DATETIME_Null
+								Set l_bOk=l_bOk AND l_oParam.PropSettext(SalFmtFormatDateTime(p_dValue, 'hhhh:mm:ss') || '.' || SalStrLeftX(SalFmtFormatDateTime(p_dValue, 'mmmmmm') ,3))
+							Set l_bOk=l_bOk AND i_oElement.appendChild(l_oParam, l_oParam)
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: AddElementPar
+						Description: Adds an element as a parameter to the current element.
+								Parameters:
+									p_sName		Parameter name. Specify '' unless you want to encapsulate the element.
+									p_oElement	Node (or a descendant) object to be added as a parameter
+									p_bCopyOnly	TRUE to Copy the content of p_oElement and leave the original one intact
+											FALSE to Move the content of p_oElement into the parameter (faster)
+									p_bChildrenOnly	TRUE to add children elements only
+											FALSE to add the element itself as a whole
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							: p_oElement
+								Class: Object
+							Boolean: p_bCopyOnly
+							Boolean: p_bChildrenOnly
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMNode
+							: l_oTemp
+								Class: MSXML_IXMLDOMNode
+							: l_oParElement
+								Class: MSXML_IXMLDOMElement
+							: l_oChildren
+								Class: MSXML_IXMLDOMNodeList
+							Number: l_n
+						Actions
+							Set l_bOk=TRUE
+							!
+							If p_sName
+								Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oParam )
+								Set l_bOk=l_bOk AND i_oElement.appendChild(l_oParam, l_oParam)
+								Set l_bOk=l_bOk AND l_oParElement.Attach(l_oParam)
+							Else
+								Set l_bOk=l_bOk AND l_oParElement.Attach(i_oElement)
+							!
+							Set l_bOk=l_bOk AND l_oParam.Attach(p_oElement)
+							If p_bCopyOnly
+								Set l_bOk=l_bOk AND l_oParam.cloneNode(TRUE, l_oTemp)
+								Set l_bOk=l_bOk AND l_oParam.Attach(l_oTemp)
+							!
+							If p_bChildrenOnly
+								Set l_bOk=l_bOk AND l_oParam.PropGetchildNodes(l_oChildren)
+								Set l_bOk=l_bOk AND l_oChildren.PropGetlength(l_n)
+								While l_n > 0
+									Set l_bOk=l_bOk AND l_oChildren.nextNode(l_oParam)
+									Set l_bOk=l_bOk AND l_oParElement.appendChild(l_oParam, l_oParam)
+									Set l_n=l_n-1
+							Else
+								Set l_bOk=l_bOk AND l_oParElement.appendChild(l_oParam, l_oParam)
+							!
+							Return l_bOk OR __FetchErrorX(l_oParElement) OR __FetchErrorX(l_oParam) OR __FetchErrorX(l_oChildren) OR __FetchError()
+					Function: BeginComplexPar
+						Description: Starts a complex parameter by adding a child element to the current element.
+								All the successive calls to ParAddXXXX() untill a corresponding ParEndComplex()
+								will be adding parameters within this complex parameter giving you the chance
+								to create any level of nesting parameters.
+								Parameters:
+									p_sName		Name of the complex parameter
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oElement
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.createElement(p_sName, l_oElement )
+							Set l_bOk=l_bOk AND i_oElement.appendChild(l_oElement, l_oElement)
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oElement)
+							Return l_bOk OR __FetchErrorX(l_oElement) OR __FetchError()
+					Function: EndComplexPar
+						Description: Ends a complex parameter by selecting the parent element as the current element.
+								Parameters:
+									None
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return SelectParentNode()
+					Function: AddStringAttr
+						Description: Adds a string attribute within the current element.
+								Parameters:
+									p_sAttrName	Attribute name
+									p_sAttrValue	Attribute value
+									p_sParName	Name of the parameter within the current element to which the attribute should be added.
+											Specify '' if you want to add the attribute directly to the curent element.
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sAttrName
+							String: p_sAttrValue
+							String: p_sParName
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+							: l_vValue
+								Class: Variant
+						Actions
+							Set l_bOk=TRUE
+							If p_sParName
+								Set l_bOk=l_bOk AND __FindNode(p_sParName, l_oParam)
+							Else
+								Set l_bOk=l_bOk AND l_oParam.Attach(i_oElement)
+							Set l_bOk=l_bOk AND l_vValue.SetString(p_sAttrValue)
+							Set l_bOk=l_bOk AND l_oParam.setAttribute(p_sAttrName, l_vValue)
+							!
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					!
+					! Element navigation
+					Function: SelectNode
+						Description: Selects the specified node to become the current element.
+								Parameters:
+									p_sXPath		XPath to the node. The context for the XPath is the current element.
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+								
+								Note: Unless you specify '/', ':' or '(' in the XPath, the children of the current element will be searched
+								manually to ignore the namespaces!
+						Returns
+							Boolean:
+						Parameters
+							String: p_sXPath
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMNode
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND __FindNode(p_sXPath, l_oParam)
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oParam)
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: SelectParentNode
+						Description: Selects the parent node of the current element to become the current element.
+								Parameters:
+									None
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oElement
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oElement.PropGetparentNode(l_oElement)
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oElement)
+							If NOT l_bOk
+								If i_Error.scode=0 AND i_Error.wcode=0
+									Set i_Error.scode=91
+									Set i_Error.description='The parent node does not exist.'
+									Return FALSE
+							Return l_bOk OR __FetchError()
+					Function: SelectPrevNode
+						Description: Selects the previous sibling node of the current element to become the current element.
+								Parameters:
+									None
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oElement
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oElement.PropGetpreviousSibling(l_oElement)
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oElement)
+							If NOT l_bOk
+								If i_Error.scode=0 AND i_Error.wcode=0
+									Set i_Error.scode=92
+									Set i_Error.description='The previous node does not exist.'
+									Return FALSE
+							Return l_bOk OR __FetchError()
+					Function: SelectNextNode
+						Description: Selects the next sibling node of the current element to become the current element.
+								Parameters:
+									None
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oElement
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oElement.PropGetnextSibling(l_oElement)
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oElement)
+							If NOT l_bOk
+								If i_Error.scode=0 AND i_Error.wcode=0
+									Set i_Error.scode=93
+									Set i_Error.description='The next node does not exist.'
+									Return FALSE
+							Return l_bOk OR __FetchError()
+					Function: SelectChildNode
+						Description: Selects either the first or the last child of the current element to become the current element.
+								Parameters:
+									p_bFirst		TRUE to select the first child of the current element
+											FALSE to select the last child of the current element
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+						Returns
+							Boolean:
+						Parameters
+							Boolean: p_bFirst
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oElement
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							If p_bFirst
+								Set l_bOk=l_bOk AND i_oElement.PropGetfirstChild(l_oElement)
+							Else
+								Set l_bOk=l_bOk AND i_oElement.PropGetlastChild(l_oElement)
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oElement)
+							If NOT l_bOk
+								If i_Error.scode=0 AND i_Error.wcode=0
+									Set i_Error.scode=94
+									Set i_Error.description='There is no child node.'
+									Return FALSE
+							Return l_bOk OR __FetchError()
+					Function: SelectRequest
+						Description: Selects the operation element of the SOAP Request document to become the current element.
+								Parameters:
+									None
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oEnvelope
+								Class: MSXML_IXMLDOMElement
+							: l_oBody
+								Class: MSXML_IXMLDOMElement
+							: l_oElement
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapRequest.PropGetdocumentElement(l_oEnvelope)
+							Set l_bOk=l_bOk AND l_oEnvelope.PropGetfirstChild(l_oBody)
+							Set l_bOk=l_bOk AND l_oBody.PropGetfirstChild(l_oElement)
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oElement)
+							If NOT l_bOk
+								If i_Error.scode=0 AND i_Error.wcode=0
+									Set i_Error.scode=95
+									Set i_Error.description='Invalid SOAP Request document.'
+									Return FALSE
+							Return l_bOk OR __FetchErrorX(l_oEnvelope) OR __FetchErrorX(l_oBody) OR __FetchError()
+					Function: SelectResponse
+						Description: Selects the response element of the SOAP Response document to become the current element.
+								Parameters:
+									None
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oEnvelope
+								Class: MSXML_IXMLDOMElement
+							: l_oBody
+								Class: MSXML_IXMLDOMElement
+							: l_oElement
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							Set l_bOk=l_bOk AND i_oSoapResponse.PropGetdocumentElement(l_oEnvelope)
+							Set l_bOk=l_bOk AND l_oEnvelope.PropGetfirstChild(l_oBody)
+							Set l_bOk=l_bOk AND l_oBody.PropGetfirstChild(l_oElement)
+							Set l_bOk=l_bOk AND i_oElement.Attach(l_oElement)
+							If NOT l_bOk
+								If i_Error.scode=0 AND i_Error.wcode=0
+									Set i_Error.scode=96
+									Set i_Error.description='Invalid SOAP Response.'
+									Return FALSE
+							Return l_bOk OR __FetchErrorX(l_oEnvelope) OR __FetchErrorX(l_oBody) OR __FetchError()
+					Function: GetNode
+						Description: Gets the current element.
+								Parameters:
+									p_oElement	Receive parameter: The current element.
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							: p_oElement
+								Class: Object
+						Static Variables
+						Local variables
+							: l_v
+								Class: Variant
+						Actions
+							If l_v.SetObject(i_oElement)
+								Return l_v.GetObject(p_oElement)
+							Return FALSE
+					!
+					! Read element's value:
+					Function: GetStringVal
+						Description: Gets a String value within the current element.
+								Parameters:
+									p_sName		Child element's tag name. Specify '' if you want to return the content of the curent element.
+									p_sValue		Receive parameter: The element's content
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Receive String: p_sValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+						Actions
+							Set l_bOk=TRUE
+							If p_sName
+								Set l_bOk=l_bOk AND __FindNode(p_sName, l_oParam)
+								Set l_bOk=l_bOk AND l_oParam.PropGettext(p_sValue)
+							Else
+								Set l_bOk=l_bOk AND i_oElement.PropGettext(p_sValue)
+							!
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: GetBooleanVal
+						Description: Gets a Boolean value within the current element.
+								Parameters:
+									p_sName		Child element's tag name. Specify '' if you want to return the content of the curent element.
+									p_bValue		Receive parameter: The element's content
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Receive Boolean: p_bValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+							String: l_sValue
+						Actions
+							Set l_bOk=TRUE
+							If p_sName
+								Set l_bOk=l_bOk AND __FindNode(p_sName, l_oParam)
+								Set l_bOk=l_bOk AND l_oParam.PropGettext(l_sValue)
+							Else
+								Set l_bOk=l_bOk AND i_oElement.PropGettext(l_sValue)
+							If l_bOk
+								Set l_sValue=SalStrTrimX(SalStrLowerX(l_sValue))
+								If l_sValue='1' OR l_sValue='true'
+									Set p_bValue=TRUE
+								Else If l_sValue='0' OR l_sValue='false'
+									Set p_bValue=FALSE
+								Else If NOT l_sValue
+									Set p_bValue=NUMBER_Null
+								Else If i_Error.scode=0 AND i_Error.wcode=0
+									Set i_Error.scode=11
+									Set i_Error.description='Incorrect boolean value: ' || SalStrLeftX(l_sValue, 10) || '...'
+									Return FALSE
+							!
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: GetNumberVal
+						Description: Gets a Number value within the current element.
+								Parameters:
+									p_sName		Child element's tag name. Specify '' if you want to return the content of the curent element.
+									p_nValue		Receive parameter: The element's content
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+								
+								Note: These XML data types are supported: decimal, float, double, integer, nonPositiveInteger, negativeInteger, long, int,
+								short, byte, nonNegativeInteger, unsignedLong, unsignedInt, unsignedShort, unsignedByte, positiveInteger
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Receive Number: p_nValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+							String: l_sValue
+							Number: l_nE
+							String: l_sDecimal
+							String: l_sExponent
+							Number: l_nExponent
+							Number: l_nDecPoint
+							String: l_sInteger
+							String: l_sFraction
+							Number: l_nFraction
+						Actions
+							Set l_bOk=TRUE
+							If p_sName
+								Set l_bOk=l_bOk AND __FindNode(p_sName, l_oParam)
+								Set l_bOk=l_bOk AND l_oParam.PropGettext(l_sValue)
+							Else
+								Set l_bOk=l_bOk AND i_oElement.PropGettext(l_sValue)
+							If l_bOk
+								Set l_sDecimal=SalStrTrimX(SalStrLowerX(l_sValue))
+								If l_sDecimal
+									Set l_nE=SalStrScan(l_sDecimal, 'e')
+									If l_nE != -1
+										Set l_sExponent=SalStrMidX(l_sDecimal, l_nE+1, 999)
+										Set l_nExponent=SalStrToNumber(l_sExponent)
+										If l_nExponent=0 AND NOT SalStrIsValidNumber(l_sExponent)
+											Set l_bOk=FALSE
+										Set l_sDecimal=SalStrLeftX(l_sDecimal, l_nE)
+									!
+									Set l_nDecPoint=SalStrScan(l_sDecimal, '.')
+									If l_nDecPoint = -1
+										Set p_nValue=SalStrToNumber(l_sDecimal)
+										If p_nValue=0 AND NOT SalStrIsValidNumber(l_sDecimal)
+											Set l_bOk=FALSE
+									Else
+										Set l_sInteger=SalStrLeftX(l_sDecimal, l_nDecPoint)
+										Set p_nValue=SalStrToNumber(l_sInteger)
+										If p_nValue=0 AND NOT SalStrIsValidNumber(l_sInteger)
+											Set l_bOk=FALSE
+										Else
+											Set l_sFraction=SalStrMidX(l_sDecimal, l_nDecPoint +1, 999)
+											If p_nValue<0
+												Set l_nFraction= - SalStrToNumber(l_sFraction)
+											Else
+												Set l_nFraction=SalStrToNumber(l_sFraction)
+											If l_nFraction=0 AND NOT SalStrIsValidNumber(l_sFraction)
+												Set l_bOk=FALSE
+											Else
+												Set p_nValue=p_nValue+(  l_nFraction / SalStrToNumber('1' || SalStrRepeatX('0', SalStrLength(l_sDecimal)-l_nDecPoint-1) )   )
+									!
+									If l_nExponent != 0
+										Set p_nValue=p_nValue * SalNumberPower(2, l_nExponent)
+									If NOT l_bOk AND i_Error.scode=0 AND i_Error.wcode=0
+										Set i_Error.scode=12
+										Set i_Error.description='Incorrect number value: ' || SalStrLeftX(l_sValue, 49) || '...'
+										Return FALSE
+								Else
+									Set p_nValue=NUMBER_Null
+							!
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					Function: GetDateVal
+						Description: Gets a Date/Time value within the current element.
+								Parameters:
+									p_sName		Child element's tag name. Specify '' if you want to return the content of the curent element.
+									p_dValue		Receive parameter: The element's content
+								Returns:
+									Boolean:		TRUE if successful, otherwise FALSE
+								
+								Note: These XML data types are supported: date, time and dateTime.
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							Receive Date/Time: p_dValue
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oParam
+								Class: MSXML_IXMLDOMElement
+							String: l_sValue
+							String: l_sDT
+							Number: l_nT
+							String: l_sTime
+							Number: l_nDay
+							Number: l_nMonth
+							Number: l_nYear
+							Number: l_nHour
+							Number: l_nMinute
+							Number: l_nSecond
+							Number: l_nSplit
+							Number: l_nS
+							String: l_sS
+						Actions
+							Set l_bOk=TRUE
+							If p_sName
+								Set l_bOk=l_bOk AND __FindNode(p_sName, l_oParam)
+								Set l_bOk=l_bOk AND l_oParam.PropGettext(l_sValue)
+							Else
+								Set l_bOk=l_bOk AND i_oElement.PropGettext(l_sValue)
+							If l_bOk
+								Set l_sDT=SalStrTrimX(SalStrUpperX(l_sValue))
+								If l_sDT
+									If -1 = SalStrScan(SalStrLeftX(l_sDT, 8), '-')
+										Set l_sTime=l_sDT
+									Else
+										Set l_nT=SalStrScan(l_sDT, 'T')
+										If l_nT= -1
+											Set l_nT=SalStrLength(l_sDT)
+										Else
+											Set l_sTime=SalStrMidX(l_sDT, l_nT+1, 999)
+										!
+										If SalStrMidX(l_sDT, l_nT-6, 1) != '-' OR SalStrMidX(l_sDT, l_nT-3, 1) != '-'
+											Set l_bOk=FALSE
+										!
+										Set l_nYear=SalStrToNumber(SalStrLeftX(l_sDT, l_nT-6))
+										If l_nYear=0 AND NOT SalStrIsValidNumber(SalStrLeftX(l_sDT, l_nT-6))
+											Set l_bOk=FALSE
+										!
+										Set l_nMonth=SalStrToNumber(SalStrMidX(l_sDT, l_nT-5, 2))
+										If l_nMonth<1 OR l_nMonth>12
+											Set l_bOk=FALSE
+										!
+										Set l_nDay=SalStrToNumber(SalStrMidX(l_sDT, l_nT-2, 2))
+										If l_nDay<1 OR l_nDay>31
+											Set l_bOk=FALSE
+									If l_sTime
+										!
+										If SalStrMidX(l_sTime, 2, 1) != ':' OR SalStrMidX(l_sTime, 5, 1) != ':'
+											Set l_bOk=FALSE
+										!
+										Set l_nHour=SalStrToNumber(SalStrLeftX(l_sTime, 2))
+										If l_nHour<0 OR l_nHour>23 OR (l_nHour=0 AND NOT SalStrIsValidNumber(SalStrLeftX(l_sTime, 2)))
+											Set l_bOk=FALSE
+										!
+										Set l_nMinute=SalStrToNumber(SalStrMidX(l_sTime, 3, 2))
+										If l_nMinute<0 OR l_nMinute>59 OR (l_nMinute=0 AND NOT SalStrIsValidNumber(SalStrMidX(l_sTime, 3, 2)))
+											Set l_bOk=FALSE
+										!
+										Set l_nSecond=SalStrToNumber(SalStrMidX(l_sTime, 6, 2))
+										If l_nSecond<0 OR l_nSecond>59 OR (l_nSecond=0 AND NOT SalStrIsValidNumber(SalStrMidX(l_sTime, 6, 2)))
+											Set l_bOk=FALSE
+										!
+										If '.' = SalStrMidX(l_sTime, 8, 1)
+											Set l_nSplit=1
+											Set l_sTime=SalStrMidX(l_sTime, 9, 999)
+											Loop
+												Set l_sS=SalStrMidX(l_sTime, l_nS, 1)
+												If l_sS<'0' OR l_sS>'9'
+													Break
+												Else
+													Set l_nSplit=l_nSplit * 10
+												Set l_nS=l_nS+1
+											Set l_nSplit=SalStrToNumber(SalStrLeftX(l_sTime, l_nS)) / l_nSplit
+									Set p_dValue=SalDateConstruct(l_nYear, l_nMonth, l_nDay, l_nHour, l_nMinute, l_nSecond)
+									If l_nSplit
+										Set p_dValue=p_dValue+(l_nSplit/86400)
+									If (NOT l_bOk OR p_dValue=DATETIME_Null)  AND i_Error.scode=0 AND i_Error.wcode=0
+										Set i_Error.scode=13
+										Set i_Error.description='Incorrect date or time value: ' || SalStrLeftX(l_sValue, 49) || '...'
+										Return FALSE
+								Else
+									Set p_dValue=DATETIME_Null
+							!
+							Return l_bOk OR __FetchErrorX(l_oParam) OR __FetchError()
+					!
+					! Error processing
+					Function: FreezeErrors
+						Description: Freezes or unfreezes error detection.
+								Parameters:
+									p_bFreeze	TRUE to freeze the error detection
+											FALSE to unfreeze the error detection
+								Returns:
+									Boolean:		TRUE if successful, FALSE otherwise
+								
+								Note: This method is rarely used, e.g. if you are just inspecting subelements by using SelectXXXX()
+								and you do not want to change a possible previous error when getting past the last element.
+						Returns
+							Number:
+						Parameters
+							Boolean: p_bFreeze
+						Static Variables
+						Local variables
+						Actions
+							If p_bFreeze
+								Set i_Error.wcode=1
+							Else
+								Set i_Error.wcode=0
+							Return TRUE
+					Function: GetError
+						Description: Returns the error number of the first recorded error
+								Parameters:
+									p_bReset		TRUE to reset the recorded error and unfreeze the error detection
+											so that following errors can be tracked
+											FALSE if you want to call GetError successively with the same result
+								Returns:
+									Number:		Error number. 0 if no error.
+								
+						Returns
+							Number:
+						Parameters
+							Boolean: p_bReset
+						Static Variables
+						Local variables
+							Number: l_nError
+						Actions
+							Set l_nError=i_Error.scode
+							If p_bReset
+								Set i_Error.scode=0
+								Set i_Error.wcode=0
+								Set i_Error.description=''
+								Set i_Error.source = ''
+								Set i_Error.helpContext = 0
+								Set i_Error.helpFile = ''
+							Return l_nError
+					Function: GetErrorText
+						Description: Returns the error text
+								Parameters:
+									None
+								Returns:
+									String:		Error description
+								
+						Returns
+							String:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							Return i_Error.description
+					!
+					Function: __FetchError
+						Description: A private method for fetching the last error from all instance Objects. Should not be called directly.
+								Always returns FALSE so that it can be used in this manner - Return l_bOk OR __FetchError()
+						Returns
+							Boolean:
+						Parameters
+						Static Variables
+						Local variables
+						Actions
+							If i_Error.scode=0 AND i_Error.wcode=0
+								If i_oSoapRequest.GetLastError(i_Error)
+								Else If i_oSoapResponse.GetLastError(i_Error)
+								Else If i_oElement.GetLastError(i_Error)
+								!
+								If i_Error.scode=0
+									Set i_Error.scode=i_Error.wcode
+									Set i_Error.wcode=0
+							Return FALSE
+					Function: __FetchErrorX
+						Description: A private method for fetching the last error from the specified Object. Should not be called directly.
+								Always returns FALSE so that it can be used in this manner - Return l_bOk OR __FetchErrorX(object)
+						Returns
+							Boolean:
+						Parameters
+							: p_o
+								Class: Object
+						Static Variables
+						Local variables
+						Actions
+							If i_Error.scode=0 AND i_Error.wcode=0
+								Call p_o.GetLastError(i_Error)
+								!
+								If i_Error.scode=0
+									Set i_Error.scode=i_Error.wcode
+									Set i_Error.wcode=0
+							Return FALSE
+					Function: __FindNode
+						Description: A private method searching for the specified node within the current element.
+						Returns
+							Boolean:
+						Parameters
+							String: p_sName
+							: p_oNode
+								Class: MSXML_IXMLDOMNode
+						Static Variables
+						Local variables
+							Boolean: l_bOk
+							: l_oNode
+								Class: MSXML_IXMLDOMNode
+							: l_oTemp
+								Class: MSXML_IXMLDOMNode
+							String: l_sBaseName
+						Actions
+							Set l_bOk=TRUE
+							! Avoid XPath if you can as it does not support namespace wild chars:
+							If -1 = SalStrScan(p_sName, '/') AND -1 = SalStrScan(p_sName, ':') AND -1 = SalStrScan(p_sName, '(')
+								Set l_bOk=l_bOk AND i_oElement.PropGetfirstChild(l_oNode)
+								While l_bOk AND l_oTemp.Attach(l_oNode) AND l_oTemp.PropGetbaseName(l_sBaseName) AND l_sBaseName != p_sName
+									Set l_bOk=l_bOk AND l_oTemp.PropGetnextSibling(l_oNode)
+								Set l_bOk=l_bOk AND l_sBaseName = p_sName
+							Else
+								Set l_bOk=l_bOk AND i_oElement.selectSingleNode(p_sName, l_oNode)
+							!
+							Set l_bOk=l_bOk AND p_oNode.Attach(l_oNode)
+							If NOT l_bOk
+								If i_Error.scode=0 AND i_Error.wcode=0
+									Set i_Error.scode=99
+									Set i_Error.description='Cannot find the node - ' || p_sName
+							Return l_bOk
+			!
+		Default Classes
+			MDI Window: cBaseMDI
+			Form Window:
+			Dialog Box:
+			Table Window:
+			Quest Window:
+			Data Field:
+			Spin Field:
+			Multiline Field:
+			Pushbutton:
+			Radio Button:
+			Option Button:
+			Check Box:
+			Child Table:
+			Quest Child Window: cQuickDatabase
+			List Box:
+			Combo Box:
+			Picture:
+			Vertical Scroll Bar:
+			Horizontal Scroll Bar:
+			Column:
+			Background Text:
+			Group Box:
+			Line:
+			Frame:
+			Custom Control:
+			ActiveX:
+		Application Actions
+	! Revision history
+		* 20040712 | VNL | 4 | In case of the "Invalid SOAP Response", the error description will include the HTTP status
+		* 20040709 | VNL | 3 | In case of the "Invalid SOAP Response", the error description will include the complete response text
+		* 20031201 | VNL | 2 | AddStringAttr() method added
+		* 20031127 | VNL | 1 | The initial release
